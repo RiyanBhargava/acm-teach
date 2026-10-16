@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img"><title>RAG: retrieve useful context, then generate</title><desc>Find relevant source material and give it to the model.</desc><rect width="100%" height="100%" fill="#F7F9FC" />
+<text x="48" y="36" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700" fill="#19324A">RAG: retrieve useful context, then generate</text>
+<text x="48" y="90" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#50677D">Find relevant source material and give it to the model.</text>
+<text x="48" y="158" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#50677D">PREPARE THE DOCUMENTS</text>
+<rect x="48" y="200" width="303" height="120" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+<text x="68" y="220" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#19324A">Documents</text>
+<text x="68" y="268" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#19324A">Policies, manuals, notes</text>
+<rect x="395" y="200" width="303" height="120" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+<text x="415" y="220" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#19324A">Chunks</text>
+<text x="415" y="268" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#19324A">Split into useful pieces</text>
+<rect x="742" y="200" width="303" height="120" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+<text x="762" y="220" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#19324A">Embeddings</text>
+<text x="762" y="268" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#19324A">Represent text as vectors</text>
+<rect x="1089" y="200" width="303" height="120" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+<text x="1109" y="220" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#19324A">Search index</text>
+<text x="1109" y="268" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#19324A">Vectors + text + metadata</text>
+<polyline points="351,260 385,260" fill="none" stroke="#8DA2B4" stroke-width="3" /><polygon points="385,260 373.2941876694152,265.654551943446 373.2941876694152,254.345448056554" fill="#8DA2B4" />
+<polyline points="698,260 732,260" fill="none" stroke="#8DA2B4" stroke-width="3" /><polygon points="732,260 720.2941876694152,265.654551943446 720.2941876694152,254.345448056554" fill="#8DA2B4" />
+<polyline points="1045,260 1079,260" fill="none" stroke="#8DA2B4" stroke-width="3" /><polygon points="1079,260 1067.2941876694151,265.654551943446 1067.2941876694151,254.345448056554" fill="#8DA2B4" />
+<text x="48" y="385" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#50677D">ANSWER A QUESTION</text>
+<rect x="48" y="430" width="303" height="125" rx="16" fill="#EAF3FC" stroke="#CBD5E1" stroke-width="2" />
+<text x="68" y="451" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#19324A">Question</text>
+<text x="68" y="500" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#19324A">Embed the query</text>
+<rect x="395" y="430" width="303" height="125" rx="16" fill="#EAF3FC" stroke="#CBD5E1" stroke-width="2" />
+<text x="415" y="451" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#19324A">Retrieve</text>
+<text x="415" y="500" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#19324A">Search for useful chunks</text>
+<rect x="742" y="430" width="303" height="125" rx="16" fill="#E7F5F0" stroke="#CBD5E1" stroke-width="2" />
+<text x="762" y="451" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#19324A">Model</text>
+<text x="762" y="500" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#19324A">Question + source text</text>
+<rect x="1089" y="430" width="303" height="125" rx="16" fill="#EAF3FC" stroke="#CBD5E1" stroke-width="2" />
+<text x="1109" y="451" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#19324A">Answer</text>
+<text x="1109" y="500" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#19324A">Use evidence and cite it</text>
+<polyline points="351,490 385,490" fill="none" stroke="#8DA2B4" stroke-width="3" /><polygon points="385,490 373.2941876694152,495.654551943446 373.2941876694152,484.345448056554" fill="#8DA2B4" />
+<polyline points="698,490 732,490" fill="none" stroke="#8DA2B4" stroke-width="3" /><polygon points="732,490 720.2941876694152,495.654551943446 720.2941876694152,484.345448056554" fill="#8DA2B4" />
+<polyline points="1045,490 1079,490" fill="none" stroke="#8DA2B4" stroke-width="3" /><polygon points="1079,490 1067.2941876694151,495.654551943446 1067.2941876694151,484.345448056554" fill="#8DA2B4" />
+<polyline points="1240,320 1240,355 546,355 546,415" fill="none" stroke="#8DA2B4" stroke-width="3" stroke-dasharray="9 7" /><polygon points="546,415 540.345448056554,403.2941876694152 551.654551943446,403.2941876694152" fill="#8DA2B4" />
+<text x="730" y="365" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#50677D">Search the prepared index</text>
+<rect x="48" y="615" width="1344" height="95" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+<text x="72" y="635" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#19324A">Retrieval selects context; it does not retrain the model.</text>
+<text x="72" y="673" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#19324A">Check retrieved sources and the answer. Missing or irrelevant evidence can still produce a bad answer.</text>
+</svg>

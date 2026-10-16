@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1135" viewBox="0 0 1440 1135" role="img"><title>LangGraph: two steps, one shared state</title><desc>2 work nodes  |  1 model call  |  1 HTML output file</desc><rect width="100%" height="100%" fill="#F7F9FC" />
+<text x="48" y="36" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700" fill="#19324A">LangGraph: two steps, one shared state</text>
+<text x="48" y="90" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#50677D">2 work nodes  |  1 model call  |  1 HTML output file</text>
+<text x="48" y="150" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#50677D">EXECUTION ORDER</text>
+<text x="790" y="150" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#50677D">STATE AFTER EACH STEP</text>
+<rect x="48" y="195" width="555" height="100" rx="16" fill="#EAF3FC" stroke="#CBD5E1" stroke-width="2" />
+<text x="72" y="213" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" fill="#19324A">START</text>
+<text x="72" y="254" dominant-baseline="text-before-edge" font-family="Consolas, monospace" font-size="22" font-weight="400" fill="#19324A">app.invoke({"request": user_input})</text>
+<rect x="790" y="195" width="602" height="100" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+<text x="814" y="213" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#19324A">Input state</text>
+<text x="814" y="254" dominant-baseline="text-before-edge" font-family="Consolas, monospace" font-size="23" font-weight="400" fill="#19324A">request: "Build a counter"</text>
+<polyline points="603,245 775,245" fill="none" stroke="#8DA2B4" stroke-width="3" stroke-dasharray="9 7" /><polygon points="775,245 763.2941876694152,250.654551943446 763.2941876694152,239.345448056554" fill="#8DA2B4" />
+<polyline points="325,295 325,350" fill="none" stroke="#8DA2B4" stroke-width="3" /><polygon points="325,350 319.345448056554,338.2941876694152 330.654551943446,338.2941876694152" fill="#8DA2B4" />
+<rect x="48" y="350" width="555" height="220" rx="16" fill="#FFF3D9" stroke="#D8B86A" stroke-width="2" />
+<text x="72" y="371" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#19324A">1. generate: generate_page()</text>
+<text x="72" y="417" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#19324A">Read request + short system prompt.</text>
+<text x="72" y="450" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#19324A">Call ChatGroq once to generate HTML.</text>
+<text x="72" y="483" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#19324A">Remove markdown fences, check HTML tags.</text>
+<text x="72" y="527" dominant-baseline="text-before-edge" font-family="Consolas, monospace" font-size="22" font-weight="400" fill="#19324A">Return update: {"html": html}</text>
+<rect x="790" y="383" width="602" height="150" rx="16" fill="#FFF3D9" stroke="#D8B86A" stroke-width="2" />
+<text x="814" y="403" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#19324A">After generate</text>
+<text x="814" y="447" dominant-baseline="text-before-edge" font-family="Consolas, monospace" font-size="23" font-weight="400" fill="#19324A">request: "Build a counter"</text>
+<text x="814" y="485" dominant-baseline="text-before-edge" font-family="Consolas, monospace" font-size="23" font-weight="400" fill="#815700">html: "&lt;html&gt;...&lt;/html&gt;"</text>
+<polyline points="603,460 775,460" fill="none" stroke="#8DA2B4" stroke-width="3" stroke-dasharray="9 7" /><polygon points="775,460 763.2941876694152,465.654551943446 763.2941876694152,454.345448056554" fill="#8DA2B4" />
+<text x="630" y="422" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#50677D">merge</text>
+<polyline points="325,570 325,625" fill="none" stroke="#8DA2B4" stroke-width="3" /><polygon points="325,625 319.345448056554,613.2941876694152 330.654551943446,613.2941876694152" fill="#8DA2B4" />
+<rect x="48" y="625" width="555" height="160" rx="16" fill="#E7F5F0" stroke="#86B5A8" stroke-width="2" />
+<text x="72" y="645" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#19324A">2. save: save_page()</text>
+<text x="72" y="690" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#19324A">Write html to output/index.html using Python.</text>
+<text x="72" y="731" dominant-baseline="text-before-edge" font-family="Consolas, monospace" font-size="22" font-weight="400" fill="#19324A">Return update: {"file_path": path}</text>
+<rect x="790" y="600" width="602" height="215" rx="16" fill="#E7F5F0" stroke="#86B5A8" stroke-width="2" />
+<text x="814" y="621" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#19324A">After save</text>
+<text x="814" y="666" dominant-baseline="text-before-edge" font-family="Consolas, monospace" font-size="23" font-weight="400" fill="#19324A">request: "Build a counter"</text>
+<text x="814" y="705" dominant-baseline="text-before-edge" font-family="Consolas, monospace" font-size="23" font-weight="400" fill="#19324A">html: "&lt;html&gt;...&lt;/html&gt;"</text>
+<text x="814" y="744" dominant-baseline="text-before-edge" font-family="Consolas, monospace" font-size="23" font-weight="400" fill="#146552">file_path: ".../output/index.html"</text>
+<polyline points="603,708 775,708" fill="none" stroke="#8DA2B4" stroke-width="3" stroke-dasharray="9 7" /><polygon points="775,708 763.2941876694152,713.654551943446 763.2941876694152,702.345448056554" fill="#8DA2B4" />
+<text x="630" y="669" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#50677D">merge</text>
+<polyline points="325,785 325,850" fill="none" stroke="#8DA2B4" stroke-width="3" /><polygon points="325,850 319.345448056554,838.2941876694152 330.654551943446,838.2941876694152" fill="#8DA2B4" />
+<rect x="48" y="850" width="555" height="95" rx="16" fill="#EAF3FC" stroke="#CBD5E1" stroke-width="2" />
+<text x="72" y="869" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" fill="#19324A">END</text>
+<text x="72" y="908" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#19324A">Return the complete state to main.py.</text>
+<rect x="790" y="860" width="602" height="120" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+<text x="814" y="880" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#19324A">State cards are snapshots, not extra nodes.</text>
+<text x="814" y="911" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#19324A">Each returned update adds or replaces its key.</text>
+<text x="814" y="942" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#19324A">Other keys stay available.</text>
+<rect x="48" y="1000" width="1344" height="110" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+<text x="72" y="1020" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#50677D">AFTER THE GRAPH</text>
+<text x="72" y="1060" dominant-baseline="text-before-edge" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="400" fill="#19324A">main.py prints the saved path. You review the HTML and open it in a browser.</text>
+</svg>
